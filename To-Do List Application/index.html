@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <form id="task-form">
+      <select id="task-category">
+          <option value="Personal">Personal</option>
+          <option value="Work">Work</option>
+          <option value="Home">Home</option>
+          <option value="Other">Other</option>
+      </select>
+      <input type="text" id="task-input" placeholder="Enter a new task..." required>
+      <input type="datetime-local" id="task-due-date" placeholder="Due date">
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list">
+      
+    </ul>
+  </div>
+  <div class="sorting">
+    <button id="sort-by-completed">Sort by Completed</button>
+    <button id="sort-by-date">Sort by Date</button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
